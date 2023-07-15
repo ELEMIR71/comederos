@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Control de Comedero</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Control de Comedero</h1>
+
+    <div class="background">
+      <!-- Aquí puedes agregar tus imágenes utilizando la etiqueta <img> -->
+      <img src="C:\Users\Yo quien mas\HTML\Comedero\quiquechico.jpeg" alt="Imagen 1">
+      <img src="C:\Users\Yo quien mas\HTML\Comedero\quiquegrande.jpeg" alt="Imagen 2">
+      <img src="C:\Users\Yo quien mas\HTML\Comedero\rodofrente.jpeg" alt="Imagen 3">
+      <img src="C:\Users\Yo quien mas\HTML\Comedero\rodoperfil.jpeg" alt="Imagen 3">
+      <!-- Agrega más imágenes según sea necesario -->
+    </div>
+
+  </div>
+  <div class="container1">
+    <div class="form-group">
+      <label for="redWifi">Red Wi-Fi:</label>
+      <input type="text" id="redWifi" placeholder="Nombre de la red Wi-Fi">
+    </div>
+
+    <div class="form-group">
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" id="contrasena" placeholder="Contraseña de la red Wi-Fi">
+    </div>
+
+    <button id="connectBtn" class="button">Conectar a Wi-Fi</button>
+
+    <div class="form-group">
+      <label for="encenderComedero">Encender Comedero:</label>
+      <button id="encenderComedero" class="button on">ON</button>
+    </div>
+
+    <div class="timer-container">
+      <label for="segundos">Segundos:</label>
+      <span id="segundos">0</span>
+    </div>
+  </div>
+
+  <script src="comedero.js"></script>
+</body>
+
+</html>
