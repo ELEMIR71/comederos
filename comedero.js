@@ -1,5 +1,6 @@
 var connectBtn = document.getElementById('connectBtn');
-var encenderBtn = document.getElementById('encenderComedero');
+var encendidoBtn = document.getElementById('encenderComedero');
+var apagadoBtn = document.getElementById('apagarComedero');
 var segundosLabel = document.getElementById('segundos');
 var segundos = 0;
 var intervalId = null;
@@ -19,16 +20,16 @@ connectBtn.addEventListener('click', function() {
   // Resto del código para la conexión y configuración del ESP8266
 });
 
-encenderBtn.addEventListener('click', function() {
-  if (encenderBtn.classList.contains('on')) {
-    encenderBtn.classList.remove('on');
-    encenderBtn.textContent = 'OFF';
-    startTimer();
-  } else {
-    encenderBtn.classList.add('off');
-    encenderBtn.textContent = 'ON';
-    stopTimer();
-  }
+encendidoBtn.addEventListener('click', function() {
+  encendidoBtn.classList.add('active');
+  apagadoBtn.classList.remove('active');
+  startTimer();
+});
+
+apagadoBtn.addEventListener('click', function() {
+  apagadoBtn.classList.add('active');
+  encendidoBtn.classList.remove('active');
+  stopTimer();
 });
 
 function startTimer() {

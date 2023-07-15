@@ -6,39 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Control de Comedero</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 
 <body>
   <div class="container">
     <h1 class="title">Control de Comedero</h1>
-
-    <div class="background">
-      <!-- Aquí puedes agregar tus imágenes utilizando la etiqueta <img> -->
-      <img src="https://raw.githubusercontent.com/ELEMIR71/comederos/main/quiquechico.jpeg" alt="Imagen 1">
-      <img src="https://raw.githubusercontent.com/ELEMIR71/comederos/main/quiquegrande.jpeg" alt="Imagen 2">
-      <img src="https://raw.githubusercontent.com/ELEMIR71/comederos/main/rodofrente.jpeg" alt="Imagen 3">
-      <img src="https://raw.githubusercontent.com/ELEMIR71/comederos/main/rodoperfil.jpeg" alt="Imagen 3">
-      <!-- Agrega más imágenes según sea necesario -->
-    </div>
-
   </div>
+
+  <div class="background">
+    <!-- Aquí puedes agregar tus imágenes utilizando la etiqueta <img> -->
+    <img src="https://raw.githubusercontent.com/ELEMIR71/comederos/main/quiquechico.jpeg" alt="Imagen 1">
+    <img src="https://raw.githubusercontent.com/ELEMIR71/comederos/main/quiquegrande.jpeg" alt="Imagen 2">
+    <img src="https://raw.githubusercontent.com/ELEMIR71/comederos/main/rodofrente.jpeg" alt="Imagen 3">
+    <img src="https://raw.githubusercontent.com/ELEMIR71/comederos/main/rodoperfil.jpeg" alt="Imagen 3">
+    <!-- Agrega más imágenes según sea necesario -->
+  </div>
+
   <div class="container1">
     <div class="form-group">
-      <label for="redWifi">Red Wi-Fi:</label>
-      <input type="text" id="redWifi" placeholder="Nombre de la red Wi-Fi">
+      <label for="redWifi">Red Wi-Fi:  </label>
+      <input type="text" id="redWifi" placeholder=" Nombre de la red Wi-Fi">
     </div>
 
     <div class="form-group">
-      <label for="contrasena">Contraseña:</label>
-      <input type="password" id="contrasena" placeholder="Contraseña de la red Wi-Fi">
+      <label for="contrasena">Contraseña:  </label>
+      <input type="password" id="contrasena" placeholder=" Contraseña de la red Wi-Fi">
     </div>
 
-    <button id="connectBtn" class="button">Conectar a Wi-Fi</button>
+    <button id="connectBtn" class="button connectBtn">Conectar a Wi-Fi</button>
 
     <div class="form-group">
-      <label for="encenderComedero">Encender Comedero:</label>
-      <button id="encenderComedero" class="button on">ON</button>
+      <label for="encenderComedero">Comedero</label>
+      <button id="encenderComedero" class="button encendidoBtn active">Encendido</button>
+      <label for="apagarComedero"></label>
+      <button id="apagarComedero" class="button apagadoBtn">Apagado</button>
     </div>
+    
 
     <div class="timer-container">
       <label for="segundos">Segundos:</label>
@@ -46,6 +51,7 @@
     </div>
   </div>
 
+  <script src="jquery.min.js"></script>
   <script src="comedero.js"></script>
 </body>
 
