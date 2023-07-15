@@ -45,11 +45,9 @@ body {
 }
 
 .background img {
-   object-fit: contain;
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
+    max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 .container1 {
